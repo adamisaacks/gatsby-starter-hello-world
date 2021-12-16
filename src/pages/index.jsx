@@ -1,62 +1,71 @@
 import React from "react"
-import { Controller, Scene } from "react-scrollmagic"
+import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
 export default function Home() {
   return (
     <div>
-      <section className="bg-blue-200 h-screen flex justify-center items-center">
-        <h1 className="text-8xl text-blue-800">Hi, I'm Adam Isaacks</h1>
-      </section>
-      <section className="about h-[300vh] flex flex-col lg:flex-row">
-        <Controller>
-          <Scene
-            duration={"1000"}
-            triggerHook={"0"}
-            triggerElement=".about-title"
-            // indicators={true}
-            pin
-          >
-            <div className="about-title lg:w-1/2 w-screen h-screen flex justify-center items-center text-4xl text-blue-200 bg-slate-800 mt-[0px!important]">
-              <p>About Me</p>
-            </div>
-          </Scene>
-        </Controller>
-        <div className="about-pages lg:w-1/2 w-screen">
-          <div className="h-screen flex flex-col justify-around items-center">
-            <h2>Project 1</h2>
-            <p className="w-4/5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              delectus harum reiciendis earum eaque! Nesciunt eaque quia nemo!
-              Itaque exercitationem enim voluptatibus, debitis nemo excepturi
-              possimus adipisci asperiores laboriosam, cum neque mollitia quae
-              deleniti sequi esse libero molestiae, rem ea illo! Quae eaque
-              aperiam quis omnis placeat iste fuga molestias.
-            </p>
+      <Parallax pages={4}>
+        {/* Hello banner */}
+        <ParallaxLayer offset={0} className="flex justify-center items-center">
+          <h1 className="text-8xl text-blue-800">Hi, I'm Adam Isaacks</h1>
+        </ParallaxLayer>
+
+        {/* Sticky Section */}
+
+        <ParallaxLayer
+          sticky={{ start: 1, end: 2 }}
+          className="flex justify-start items-center"
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-800">
+            <p className="text-xl text-blue-400">About Me</p>
           </div>
-          <div className="h-screen flex flex-col justify-around items-center">
-            <h2>Project 1</h2>
-            <p className="w-4/5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              delectus harum reiciendis earum eaque! Nesciunt eaque quia nemo!
-              Itaque exercitationem enim voluptatibus, debitis nemo excepturi
-              possimus adipisci asperiores laboriosam, cum neque mollitia quae
-              deleniti sequi esse libero molestiae, rem ea illo! Quae eaque
-              aperiam quis omnis placeat iste fuga molestias.
-            </p>
+        </ParallaxLayer>
+
+        {/* Moving Section */}
+        <ParallaxLayer
+          offset={1}
+          className="flex justify-end items-center text-4xl "
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-600">
+            <p className="text-xl text-blue-400">Moving</p>
           </div>
-          <div className="h-screen flex flex-col justify-around items-center">
-            <h2>Project 1</h2>
-            <p className="w-4/5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              delectus harum reiciendis earum eaque! Nesciunt eaque quia nemo!
-              Itaque exercitationem enim voluptatibus, debitis nemo excepturi
-              possimus adipisci asperiores laboriosam, cum neque mollitia quae
-              deleniti sequi esse libero molestiae, rem ea illo! Quae eaque
-              aperiam quis omnis placeat iste fuga molestias.
-            </p>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          className="flex justify-end items-center text-4xl "
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-400">
+            <p className="text-xl text-blue-800">Grooving</p>
           </div>
-        </div>
-      </section>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 3, end: 4 }}
+          className="flex justify-end items-center"
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-100">
+            <p className="text-xl text-blue-400">Hell Yeah Brother</p>
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
+          className="flex justify-start items-center text-4xl "
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-400">
+            <p className="text-xl text-blue-800">Shmooving</p>
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4}
+          className="flex justify-start items-center text-4xl "
+        >
+          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-600">
+            <p className="text-xl text-blue-800">Can't believe this worked</p>
+          </div>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   )
 }
