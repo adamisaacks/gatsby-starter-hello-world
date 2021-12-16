@@ -1,68 +1,87 @@
 import React from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import Wave from "../components/Wave"
 
 export default function Home() {
   return (
     <div>
       <Parallax pages={5}>
         {/* Hello banner */}
-        <ParallaxLayer offset={0} className="flex justify-center items-center">
+        <ParallaxLayer
+          offset={0}
+          className="flex flex-col justify-center items-center"
+        >
           <h1 className="text-8xl text-blue-800">Hi, I'm Adam Isaacks</h1>
+          <p className="text-md text-blue-600">
+            Scroll down to get to know me.
+          </p>
+          <Wave />
         </ParallaxLayer>
 
-        {/* Sticky Section */}
+        {/* Page 1 Sticky */}
 
         <ParallaxLayer
-          sticky={{ start: 1, end: 2 }}
-          className="flex justify-start items-center"
-        >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-800">
-            <p className="text-xl text-blue-400">About Me</p>
-          </div>
-        </ParallaxLayer>
+          sticky={{ start: 1, end: 3 }}
+          className="flex justify-center items-center bg-slate-600 -z-10"
+        ></ParallaxLayer>
 
-        {/* Moving Section */}
+        <ParallaxLayer
+          sticky={{ start: 3, end: 5 }}
+          className="flex justify-center items-center bg-rose-600 -z-10"
+        ></ParallaxLayer>
+
+        {/* Page 1 Moving Section */}
         <ParallaxLayer
           offset={1}
+          speed={0.5}
           className="flex justify-end items-center text-4xl "
         >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-600">
-            <p className="text-xl text-blue-400">Moving</p>
+          <div className="card flex items-center justify-center w-screen h-screen">
+            <p className="text-blue-200">Im an engineer</p>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
-          className="flex justify-end items-center text-4xl "
+          speed={0.5}
+          className="flex justify-center items-center text-4xl "
         >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-slate-400">
-            <p className="text-xl text-blue-800">Grooving</p>
-          </div>
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          sticky={{ start: 3, end: 4 }}
-          className="flex justify-end items-center"
-        >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-100">
-            <p className="text-xl text-blue-400">Hell Yeah Brother</p>
+          <div className="card flex items-center justify-center w-3/5 h-screen">
+            <p className="text-blue-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              officia magni, adipisci, tenetur eligendi culpa hic explicabo
+              nostrum iure possimus, perspiciatis magnam harum facere quisquam
+              quae impedit est voluptatibus labore? Consequatur possimus
+              veritatis quidem temporibus ratione iste eos? Quia eius, iusto aut
+              quisquam facere aliquam recusandae ex. Cupiditate, temporibus hic.
+            </p>
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={3}
-          className="flex justify-start items-center text-4xl "
+          speed={0.5}
+          className="flex justify-center items-center text-4xl "
         >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-400">
-            <p className="text-xl text-blue-800">Shmooving</p>
+          <div className="card flex items-center justify-center w-3/5 h-screen">
+            <p className="text-gray-200">A web developer</p>
           </div>
         </ParallaxLayer>
+
         <ParallaxLayer
           offset={4}
-          className="flex justify-start items-center text-4xl "
+          speed={0.5}
+          className="flex justify-center items-center text-4xl"
         >
-          <div className="card flex items-center justify-center w-1/2 h-screen bg-green-600">
-            <p className="text-xl text-blue-800">Can't believe this worked</p>
+          <div className="card flex items-center justify-center w-3/5 h-screen">
+            <p className="text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              officia magni, adipisci, tenetur eligendi culpa hic explicabo
+              nostrum iure possimus, perspiciatis magnam harum facere quisquam
+              quae impedit est voluptatibus labore? Consequatur possimus
+              veritatis quidem temporibus ratione iste eos? Quia eius, iusto aut
+              quisquam facere aliquam recusandae ex. Cupiditate, temporibus hic.
+            </p>
           </div>
         </ParallaxLayer>
       </Parallax>
