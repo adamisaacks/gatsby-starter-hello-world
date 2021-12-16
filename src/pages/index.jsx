@@ -4,7 +4,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 export default function Home() {
   return (
     <div>
-      <Parallax pages={4}>
+      <Parallax pages={5}>
         {/* Hello banner */}
         <ParallaxLayer offset={0} className="flex justify-center items-center">
           <h1 className="text-8xl text-blue-800">Hi, I'm Adam Isaacks</h1>
