@@ -5,13 +5,15 @@ import Wave from "../components/Wave"
 export default function Home() {
   return (
     <div>
-      <Parallax pages={5}>
+      <Parallax pages={5} className="text-center">
         {/* Hello banner */}
         <ParallaxLayer
           offset={0}
           className="flex flex-col justify-center items-center"
         >
-          <h1 className="text-8xl text-blue-800">Hi, I'm Adam Isaacks</h1>
+          <h1 className="text-4xl lg:text-8xl text-blue-800">
+            Hi, I'm Adam Isaacks
+          </h1>
           <p className="text-md text-blue-600">
             Scroll down to get to know me.
           </p>
@@ -34,9 +36,9 @@ export default function Home() {
         <ParallaxLayer
           offset={1}
           speed={0.5}
-          className="flex justify-end items-center text-4xl "
+          className="flex justify-end items-center "
         >
-          <div className="card flex items-center justify-center w-screen h-screen">
+          <div className="card flex items-center justify-center w-screen h-screen text-4xl lg:text-8xl">
             <p className="text-blue-200">Im an engineer</p>
           </div>
         </ParallaxLayer>
@@ -44,7 +46,7 @@ export default function Home() {
         <ParallaxLayer
           offset={2}
           speed={0.5}
-          className="flex justify-center items-center text-4xl "
+          className="flex justify-center items-center lg:text-4xl "
         >
           <div className="card flex items-center justify-center w-3/5 h-screen">
             <p className="text-blue-200">
@@ -61,7 +63,7 @@ export default function Home() {
         <ParallaxLayer
           offset={3}
           speed={0.5}
-          className="flex justify-center items-center text-4xl "
+          className="flex justify-center items-center text-4xl lg:text-8xl "
         >
           <div className="card flex items-center justify-center w-3/5 h-screen">
             <p className="text-gray-200">A web developer</p>
@@ -71,7 +73,7 @@ export default function Home() {
         <ParallaxLayer
           offset={4}
           speed={0.5}
-          className="flex justify-center items-center text-4xl"
+          className="flex justify-center items-center lg:text-4xl"
         >
           <div className="card flex items-center justify-center w-3/5 h-screen">
             <p className="text-gray-200">
