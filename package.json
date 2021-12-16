@@ -20,6 +20,7 @@
     "gatsby-plugin-postcss": "^5.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-scrollmagic": "^2.3.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
