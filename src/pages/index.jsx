@@ -216,84 +216,84 @@ export default function Home() {
           <div className="absolute h-[7%] w-[7%] left-[63%] -top-[34%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/gr.png"
+              src="../assets/images/Travel/gr.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[18%] top-[36%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/hu.png"
+              src="../assets/images/Travel/hu.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[8%] -top-[27%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/id.png"
+              src="../assets/images/Travel/id.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[47%] ">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/is.png"
+              src="../assets/images/Travel/is.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[30%] top-[22%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/jp.png"
+              src="../assets/images/Travel/jp.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[81%] top-[40%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/mx.png"
+              src="../assets/images/Travel/mx.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[30%] -top-[38%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/nl.png"
+              src="../assets/images/Travel/nl.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[74%] top-[75%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/pa.png"
+              src="../assets/images/Travel/pa.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[24%] top-[60%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/pt.png"
+              src="../assets/images/Travel/pt.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[57%] top-[57%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/th.png"
+              src="../assets/images/Travel/th.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[47%] top-[40%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/us.png"
+              src="../assets/images/Travel/us.png"
             />
           </div>
 
           <div className="absolute h-[7%] w-[7%] left-[14%] top-[80%]">
             <StaticImage
               placeholder="tracedSVG"
-              src="../assets/images/travel/vn.png"
+              src="../assets/images/Travel/vn.png"
             />
           </div>
         </ParallaxLayer>
