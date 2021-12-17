@@ -42,7 +42,7 @@ export default function Home() {
         <ParallaxLayer
           offset={1}
           speed={0.5}
-          className="flex justify-end items-center "
+          className="flex justify-end items-center z-10"
         >
           <div className=" flex items-center justify-center w-screen h-screen text-4xl lg:text-8xl">
             <p className="text-slate-700">Im an engineer</p>
@@ -102,7 +102,7 @@ export default function Home() {
         <ParallaxLayer
           offset={3}
           speed={0.5}
-          className="flex justify-center items-center text-4xl lg:text-8xl "
+          className="flex justify-center items-center text-4xl lg:text-8xl z-10"
         >
           <div className="card flex items-center justify-center w-3/5 h-screen">
             <p className="text-gray-200">Web developer</p>
@@ -176,7 +176,7 @@ export default function Home() {
         <ParallaxLayer
           offset={5}
           speed={0.5}
-          className="flex justify-center items-center text-4xl lg:text-8xl"
+          className="flex justify-center items-center text-4xl lg:text-8xl z-10"
         >
           <div className="card flex items-center justify-center w-3/5 h-screen">
             <p className="text-gray-200">Avid traveler</p>
