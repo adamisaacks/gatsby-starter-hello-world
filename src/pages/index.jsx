@@ -1,15 +1,28 @@
-import React from "react"
+import React, { useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
 export default function Home() {
+  const goTo = useRef(null)
   return (
     <div>
       {/* Set up parallax for the entire page */}
-      <Parallax pages={7} className="text-center">
+      <Parallax ref={goTo} pages={7} className="text-center">
         {/* Hello Section */}
         <ParallaxLayer offset={0} className="flex justify-center">
           <div className="flex flex-col justify-center text-center items-center">
+            <div className="nav flex absolute top-4 justify-between w-1/2">
+              <a href="#Engineer" onClick={() => goTo.current.scrollTo(1)}>
+                Engineer
+              </a>
+              <a href="#Software" onClick={() => goTo.current.scrollTo(3)}>
+                Software
+              </a>
+              <a href="#Travel" onClick={() => goTo.current.scrollTo(5)}>
+                Travel
+              </a>
+              <a href="#Contact">Contact</a>
+            </div>
             <h1 className="text-4xl lg:text-8xl text-blue-800">
               Hi, I'm Adam Isaacks
             </h1>
@@ -45,7 +58,7 @@ export default function Home() {
           className="flex justify-end items-center z-10"
         >
           <div className=" flex items-center justify-center w-screen h-screen text-4xl lg:text-8xl">
-            <p className="text-slate-700">Im an engineer</p>
+            <p className="text-slate-700">Engineer</p>
           </div>
         </ParallaxLayer>
 
@@ -72,10 +85,17 @@ export default function Home() {
             />
           </div>
 
-          <div className="absolute h-[10%] w-[10%] top-1/4 left-[70%]">
+          <div className="absolute h-[12%] w-[12%] top-1/4 left-[70%]">
             <StaticImage
               placeholder="blurred"
               src="../assets/images/AboutMe/TraneLogo.svg"
+            />
+          </div>
+
+          <div className="absolute h-[8%] w-[8%] top-1/3 left-[15%]">
+            <StaticImage
+              placeholder="blurred"
+              src="../assets/images/AboutMe/USTLogo.svg"
             />
           </div>
         </ParallaxLayer>
