@@ -1,13 +1,14 @@
 import React, { useRef } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import ImageEffects from "../components/ImageEffects"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home() {
   const goTo = useRef(null)
   return (
     <div className="text-gray-800">
       {/* Set up parallax for the entire page */}
-      <Parallax ref={goTo} pages={6.9} className="text-center">
+      <Parallax ref={goTo} pages={6.8} className="text-center">
         {/* Welcome Sticky */}
         <ParallaxLayer
           sticky={{ start: 0, end: 1 }}
@@ -46,20 +47,41 @@ export default function Home() {
           className="flex justify-center text-white z-10"
         >
           <div className="flex flex-col justify-center text-center items-center">
-            <div className="nav flex absolute top-4 justify-between lg:w-1/2 w-3/4">
-              <a href="#Engineer" onClick={() => goTo.current.scrollTo(1)}>
+            <div className="flex absolute top-4 justify-between lg:w-1/2 w-3/4">
+              <a
+                href="#Engineer"
+                onClick={() => goTo.current.scrollTo(1)}
+                className="hover:font-extrabold"
+              >
                 Engineer
               </a>
-              <a href="#Software" onClick={() => goTo.current.scrollTo(2.5)}>
+              <a
+                href="#Software"
+                onClick={() => goTo.current.scrollTo(2.5)}
+                className="hover:font-extrabold"
+              >
                 Software
               </a>
-              <a href="#Travel" onClick={() => goTo.current.scrollTo(4)}>
+              <a
+                href="#Travel"
+                onClick={() => goTo.current.scrollTo(4)}
+                className="hover:font-extrabold"
+              >
                 Travel
               </a>
-              <a href="#Contact" onClick={() => goTo.current.scrollTo(6)}>
+              <a
+                href="#Contact"
+                onClick={() => goTo.current.scrollTo(6)}
+                className="hover:font-extrabold"
+              >
                 Contact
               </a>
             </div>
+            <StaticImage
+              placeholder="blurred"
+              src="../assets/images/AboutMe/Me.jpg"
+              className="rounded-full w-1/3 lg:w-[20%]"
+            />
             <h1 className="text-4xl lg:text-8xl">Hi, I'm Adam Isaacks</h1>
             <p className="text-lg">Scroll down to get to know me.</p>
           </div>
