@@ -1,12 +1,14 @@
 import React, { useRef } from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-import ImageEffects from "../components/ImageEffects"
 import { StaticImage } from "gatsby-plugin-image"
+import ImageEffects from "../components/ImageEffects"
+import Meta from "../components/Meta"
 
 export default function Home() {
   const goTo = useRef(null)
   return (
     <div className="text-gray-800">
+      <Meta />
       {/* Set up parallax for the entire page */}
       <Parallax ref={goTo} pages={6.8} className="text-center">
         {/* Welcome Sticky */}
