@@ -79,8 +79,8 @@ export default function Home() {
             </div>
             <StaticImage
               placeholder="blurred"
-              src="../assets/images/AboutMe/Me.jpg"
-              className="rounded-full w-1/3 lg:w-[20%]"
+              src="../assets/images/AboutMe/Me.png"
+              className="rounded-full w-1/3 lg:w-[20%] shadow-xl"
             />
             <h1 className="text-4xl lg:text-8xl">Hi, I'm Adam Isaacks</h1>
             <p className="text-lg">Scroll down to get to know me.</p>
