@@ -167,7 +167,7 @@ export default function Home() {
           speed={0.6}
           className="flex justify-center items-center lg:text-4xl"
         >
-          <div className="card flex items-center justify-center w-3/5 h-screen">
+          <div className="card flex items-center justify-center lg:w-3/5 w-[90%] h-screen">
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
               officia magni, adipisci, tenetur eligendi culpa hic explicabo
@@ -196,7 +196,7 @@ export default function Home() {
           speed={0.6}
           className="flex justify-center items-center lg:text-4xl "
         >
-          <div className="card flex items-center justify-center w-3/5 h-screen">
+          <div className="card flex items-center justify-center lg:w-3/5 w-[90%] h-screen">
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
               officia magni, adipisci, tenetur eligendi culpa hic explicabo
@@ -225,7 +225,7 @@ export default function Home() {
           speed={0.6}
           className="flex justify-center items-center lg:text-4xl"
         >
-          <div className="card flex items-center justify-center w-3/5 h-screen">
+          <div className="card flex items-center justify-center lg:w-3/5 w-[90%] h-screen">
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
               officia magni, adipisci, tenetur eligendi culpa hic explicabo
@@ -243,7 +243,7 @@ export default function Home() {
           speed={0.6}
           className="flex justify-center items-center z-10"
         >
-          <div className="card flex-col align-middle items-center justify-center w-3/5 h-screen">
+          <div className="card flex-col align-middle items-center justify-center lg:w-3/5 w-[90%] h-screen">
             <p className="text-4xl lg:text-8xl">Contact</p>
             <p className="lg:text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
